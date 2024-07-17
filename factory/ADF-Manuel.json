@@ -1,0 +1,16 @@
+{
+	"name": "ADF-Manuel",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true",
+			"factoryStagingLSReferenceName": "AzureDataLakeStorage1",
+			"factoryStagingLSType": "LinkedServiceReference"
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ad6575a7-5090-4fa6-a440-dc93873296a1",
+		"tenantId": "3a4051e7-5f95-4c36-ac42-37273c28d316"
+	}
+}

@@ -1,0 +1,134 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "CustomerData.csv",
+				"folderPath": "Inbox",
+				"fileSystem": "kaits"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CustomerAlternateKey",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "CountryRegionCode",
+				"type": "String"
+			},
+			{
+				"name": "FirstName",
+				"type": "String"
+			},
+			{
+				"name": "MiddleName",
+				"type": "String"
+			},
+			{
+				"name": "LastName",
+				"type": "String"
+			},
+			{
+				"name": "BirthDate",
+				"type": "String"
+			},
+			{
+				"name": "MaritalStatus",
+				"type": "String"
+			},
+			{
+				"name": "Suffix",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "EmailAddress",
+				"type": "String"
+			},
+			{
+				"name": "YearlyIncome",
+				"type": "String"
+			},
+			{
+				"name": "TotalChildren",
+				"type": "String"
+			},
+			{
+				"name": "NumberChildrenAtHome",
+				"type": "String"
+			},
+			{
+				"name": "EnglishEducation",
+				"type": "String"
+			},
+			{
+				"name": "SpanishEducation",
+				"type": "String"
+			},
+			{
+				"name": "FrenchEducation",
+				"type": "String"
+			},
+			{
+				"name": "EnglishOccupation",
+				"type": "String"
+			},
+			{
+				"name": "SpanishOccupation",
+				"type": "String"
+			},
+			{
+				"name": "FrenchOccupation",
+				"type": "String"
+			},
+			{
+				"name": "HouseOwnerFlag",
+				"type": "String"
+			},
+			{
+				"name": "NumberCarsOwned",
+				"type": "String"
+			},
+			{
+				"name": "AddressLine1",
+				"type": "String"
+			},
+			{
+				"name": "AddressLine2",
+				"type": "String"
+			},
+			{
+				"name": "Phone",
+				"type": "String"
+			},
+			{
+				"name": "DateFirstPurchase",
+				"type": "String"
+			},
+			{
+				"name": "CommuteDistance",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
